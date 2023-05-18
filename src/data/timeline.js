@@ -31,6 +31,11 @@ export default [
 					"a list of them on the whiteboard.",
 				files:[
 					{
+						type: "Link",
+						url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+						description: "Summary of the task"
+					},
+					{
 						type: "Document",
 						file: task1,
 						filename: "task1.docx",

@@ -17,6 +17,15 @@ function UnitTimelineItem({ name, title, description, files }) {
                <img src={file.file} alt="picture" className="border max-w-xs"/>
                 <p className="px-2 py-1 text-stone-500 italic text-xs"> {file.description}</p>
             </div>
+            case "Link":
+               return <div className="flex flex-row pt-6">
+                  <a href={file.url} target="_blank">
+                  <span className="inline-block px-2 py-1 font-semibold text-white dark:text-stone-900 bg-stone-800 dark:bg-white rounded-md">
+                    Open Link
+                  </span>
+                  </a>
+                  <p className="px-2 py-1 text-stone-500"> {file.description}</p>
+               </div>
          default: return;
       }
    }
@@ -27,7 +36,7 @@ function UnitTimelineItem({ name, title, description, files }) {
                <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-stone-900 dark:bg-stone-700" />
                <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
                <span className="inline-block px-2 py-1 font-semibold text-white dark:text-stone-900 bg-stone-900 dark:bg-white rounded-md">
-                   {name}
+                   &lt;{name} /&gt;
                </span>
                   <h3 className="text-lg font-semibold text-stone-900 dark:text-white">
                      {title}
