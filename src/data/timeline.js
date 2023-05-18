@@ -17,18 +17,23 @@ export default [
 		subtitle: 'Where everything begins',
 		status: 'Finished',
 		details:
-			'How do websites work? How do emails reach your computer? How does the use of computer applications affect your daily life? This unit provides an introduction to the modern online world. Starting with your own experiences, you will extend your knowledge of online services and investigate the technology and software that supports them. You will learn more about a range of services including email, online data storage, collaborative software, search engines and blogging.',
+			`How do websites work? How do emails reach your computer? 
+			How does the use of computer applications affect your daily life? 
+			This unit provides an introduction to the modern online world. 
+			Starting with your own experiences, you will extend your knowledge of online services and investigate 
+			the technology and software that supports them. You will learn more about a range of services including
+			 email, online data storage, collaborative software, search engines and blogging.`,
 		acquired: [
-			"Internet knowledge",
-			"Investigated online services and online communication",
+			"Understanding of technology systems",
+			"Investigated components and functions of technology systems",
 			"Used collaborative software",
 			"Used online data storage",
 			"Used search engines",
-			"Investigated online services/communication components of the internet and how digital devices exchange and store information.",
-			"Investigated online services/communication issues with operating online",
+			"Investigated online services/communication components of technology systems and how digital devices exchange and store information.",
+			"Investigated online services/communication issues with operating technology systems",
 			"File compression and file formats",
 			"Types of online services and software",
-			"Parts of network",
+			"Parts of a network",
 			"CODECs"
 		],
 		timeline: [
@@ -145,5 +150,30 @@ export default [
 				]
 			}
 		],
+	},
+	{
+		id: '2',
+		unit: 2,
+		title: 'The Technology Systems',
+		subtitle: 'How it actually works',
+		status: 'Finished',
+		details:
+			`How do technology systems work? How do they impact your daily life?
+			This unit provides an introduction to technology systems and their role in the modern world.
+			Building on your existing knowledge, you will explore the components and functions of technology systems,
+			including hardware, software, and networks. You will investigate how technology systems support 
+			various applications and services, such as communication, data storage, collaboration, search engines, 
+			and blogging.`,
+		acquired: [
+			"Gained understanding of the components of technology systems and how they work together",
+			"Explored common hardware components of technology systems",
+			"Learned about the internal building blocks of a computer, including the processor, buses, and memory",
+			"Understood the purpose of networks in technology systems and how they facilitate communication between devices",
+			"Explored different types of software, including operating systems, utility programs, and applications software",
+			"Learned about the role of software in supporting communication, resource management, and everyday business activities",
+			"Explored the connection between this unit and other specialist units in the Award",
+			"Gained knowledge applicable to various IT career paths",
+		],
+		timeline: [],
 	},
 ]
