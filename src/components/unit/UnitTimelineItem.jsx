@@ -6,7 +6,7 @@ function UnitTimelineItem({ name, title, description, files }) {
          case "Document":
             return <div className="flex flex-row pt-3">
                <a href={file.file} >
-                  <span className="inline-block px-2 py-1 font-semibold text-white bg-yellow-500 dark:bg-white rounded-md">
+                  <span className="inline-block px-2 py-1 font-semibold text-white bg-yellow-500 rounded-md sm:text-smt">
                      Download {file.filename}
                   </span>
                </a>
