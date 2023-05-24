@@ -18,6 +18,7 @@ function Timeline() {
                   title={item.title}
                   status={item.status}
                   details={item.details}
+                  grade={item.grade}
                />
             ))}
          </div>

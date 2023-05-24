@@ -14,7 +14,7 @@ function UnitTimelineItem({ name, title, description, files }) {
             </div>
          case "Picture":
             return <div className="flex flex-col pt-3">
-               <img src={file.file} alt="picture" className="border max-w-xs"/>
+               <img src={file.file} alt="picture" className={"border " + (file.size ? file.size : "max-w-xs")}/>
                 <p className="px-2 py-1 text-stone-500 italic text-xs"> {file.description}</p>
             </div>
             case "Link":
@@ -43,7 +43,13 @@ function UnitTimelineItem({ name, title, description, files }) {
                   </h3>
                </p>
                <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400 max-w-xl">
-                  {description}
+                  {/*{description}*/}
+                  {description.split('\n').map((line, index) => (
+                      <React.Fragment key={index}>
+                         {line}
+                         <br />
+                      </React.Fragment>
+                  ))}
                </p>
                <div className="">
                   <h3 className="text-l font-semibold text-stone-900 dark:text-white pt-1">

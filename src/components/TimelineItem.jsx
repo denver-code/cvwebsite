@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TimelineItem({ id, unit, title, status, details }) {
+function TimelineItem({ id, unit, title, status, details, grade }) {
    return (
       <a href={"/unit/" + id}>
          <ol className="flex flex-col md:flex-row relative border-l border-stone-200 dark:border-stone-700">
@@ -14,7 +14,7 @@ function TimelineItem({ id, unit, title, status, details }) {
                      {title}
                   </h3>
                   <div className="my-1 text-sm font-normal leading-none text-stone-400 dark:text-stone-500">
-                     {status}
+                     {status}  {grade}
                   </div>
                </p>
                <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
