@@ -15,6 +15,13 @@ import Unit8Task3 from './files/8/3.pptx'
 import Unit8Task3File1 from './files/8/structure.png'
 import Unit8Task4 from './files/8/4.docx'
 
+import Unit13Task1 from './files/13/pres1.pptx'
+import Unit13Task2 from './files/13/task2.docx'
+import Unit13Task2File1 from './files/13/layout.png'
+import Unit13Task2File2 from './files/13/sitemap.png'
+import Unit13Task3 from './files/13/task3.docx'
+import Unit13Task3File1 from './files/13/screenshot_index.png'
+import Unit13Task4 from './files/13/task4.docx'
 
 export default [
 	{
@@ -393,8 +400,8 @@ export default [
 		unit: 13,
 		title: 'Website Development',
 		subtitle: 'Now it\s time to use your logo!',
-		status: 'Ongoing',
-		grade: "",
+		status: 'Finished',
+		grade: "Distinction",
 		details:
 			`Have you ever viewed a website and wondered how it was created? Many different elements can be included in
 			 the website, such as text, graphics, animation, video and programs (client-side computer scripts). Many 
@@ -412,6 +419,124 @@ export default [
 		acquired: [
 			"Understanding the characteristics and uses of mobile apps",
 		],
-		timeline: [],
+		timeline: [
+			{
+
+				name: "Assignment 1",
+				title: "The Uses and Features of Websites",
+				description: `
+					Before you start to develop the website the mobile phone
+					shop have asked you to investigate two websites. You should
+					explain the uses of the two websites and the intended
+					purpose of their features. Discuss the strengths and
+					weaknesses of both websites. The websites should be
+					designed for different purposes.`,
+				files:[
+
+					{
+						type: "Document",
+						file: Unit13Task1,
+						filename: "pres1.pptx",
+						description: "File with completed task"
+					},
+				]
+			},
+			{
+
+				name: "Assignment 2",
+				title: "Create a Design",
+				description: `
+					In order to get some ideas about what you might include in
+					your website you have evaluated two existing websites. Now
+					it’s time to plan and design your website and justify your
+					final design decisions.`,
+				files:[
+					{
+						type: "Document",
+						file: Unit13Task2,
+						filename: "task2.docx",
+						description: "File with completed task"
+					},
+					{
+						type: "Picture",
+						file: Unit13Task2File1,
+						size: "max-w-xl ",
+						description: "General layout of website"
+					},
+					{
+						type: "Picture",
+						file: Unit13Task2File2,
+						size: "max-w-xl ",
+						description: "Sitemap"
+					},
+				]
+			},
+			{
+
+				name: "Assignment 3",
+				title: "Develop and Test the Website",
+				description: `
+					MobileWorldStation liked your design and have asked you to
+					go ahead and develop the website. As part of the
+					development you will refine the website to improve
+					accessibility and performance, taking account of user
+					feedback and test results.`,
+				files:[
+
+					{
+						type: "Document",
+						file: Unit13Task3,
+						filename: "task3.docx",
+						description: "File with completed task"
+					},
+					{
+						type: "Link",
+						description: "Link to website posted in internet",
+						url: "https://mobileworldstation-website.vercel.app"
+					},
+					{
+						type: "Link",
+						description: "Link to GitHub repo with source code",
+						url: "https://github.com/denver-code/mobileworldstation_website"
+					},
+					{
+						type: "Picture",
+						description: "Screenshot of index page",
+						file: Unit13Task3File1,
+						size: "max-w-xl ",
+					}
+
+				]
+			},
+			{
+
+				name: "Assignment 4",
+				title: "Review the Finished Website",
+				description: `
+					Now that you have created and tested your website it is time
+					to evaluate the final product.
+					Justify your design, saying how it will meet its purpose
+					and user requirements.
+					Evaluate the initial design ideas/prototypes against the
+					final website in terms of overall user experience and
+					‘client’ requirements in the original brief.
+					After gathering the feedback from at least one other
+					person, use the feedback to consider how suitable the
+					product is and any constraints.
+					Justify any changes that were made during development,
+					and explain the rationale for any changes.
+					Recommend at least three improvements, but you do not
+					need to implement the enhancements.`,
+				files:[
+
+					{
+						type: "Document",
+						file: Unit13Task4,
+						filename: "task4.docx",
+						description: "File with completed task"
+					},
+				]
+			},
+		],
 	},
 ].sort((a, b) => a.unit - b.unit);
